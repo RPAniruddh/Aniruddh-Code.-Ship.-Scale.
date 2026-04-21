@@ -1,0 +1,22 @@
+.bubble-tooltip {
+  position: fixed;
+  background: rgba(226,221,216,0.92);
+  color: #0e1117;
+  font-size: 0.68rem;
+  padding: 4px 11px;
+  border-radius: 999px;
+  pointer-events: none;
+  z-index: 200;
+  opacity: 0;
+  transform: translateY(2px);
+  transition: opacity 0.15s, transform 0.15s;
+  white-space: nowrap;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+  backdrop-filter: blur(8px);
+}
+
+.bubble-tooltip.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
