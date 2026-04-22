@@ -85,6 +85,8 @@
       setTimeout(function () { applyDeckState(true); animating = false; }, 100);
     }
 
+    btnNext.addEventListener('mousedown', function (e) { e.preventDefault(); });
+    btnPrev.addEventListener('mousedown', function (e) { e.preventDefault(); });
     btnNext.addEventListener('click', goNext);
     btnPrev.addEventListener('click', goPrev);
 

@@ -201,6 +201,7 @@
       height: 400px;
       cursor: grab;
       flex-shrink: 0;
+      overflow: hidden;
     }
     .certs-track-wrap:active { cursor: grabbing; }
 
@@ -371,10 +372,10 @@
       <h2 class="certs-heading">Trusted<br><em>credentials</em><br>&amp; skills</h2>
       <p class="certs-sub">Industry-recognised certifications validating cloud architecture, backend engineering, and distributed systems expertise.</p>
       <div class="certs-nav">
-        <button class="certs-nav-btn" id="btnPrev" aria-label="Previous" disabled>
+        <button type="button" class="certs-nav-btn" id="btnPrev" aria-label="Previous" disabled>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
         </button>
-        <button class="certs-nav-btn" id="btnNext" aria-label="Next">
+        <button type="button" class="certs-nav-btn" id="btnNext" aria-label="Next">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
         </button>
         <span class="certs-counter" id="counter">01 / 04</span>
@@ -577,6 +578,8 @@ function goPrev() {
   setTimeout(function () { applyDeckState(true); animating = false; }, 100);
 }
 
+btnNext.addEventListener('mousedown', function (e) { e.preventDefault(); });
+btnPrev.addEventListener('mousedown', function (e) { e.preventDefault(); });
 btnNext.addEventListener('click', goNext);
 btnPrev.addEventListener('click', goPrev);
 

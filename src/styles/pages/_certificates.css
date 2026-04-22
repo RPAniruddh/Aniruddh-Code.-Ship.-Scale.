@@ -107,6 +107,7 @@
   height: 400px;
   cursor: grab;
   flex-shrink: 0;
+  overflow: hidden;
 }
 .certs-track-wrap:active { cursor: grabbing; }
 
@@ -275,5 +276,5 @@
     padding-right: 0;
     padding-bottom: 2.5rem;
   }
-  .certs-right { justify-content: flex-start; }
+  .certs-right { justify-content: center; }
 }
