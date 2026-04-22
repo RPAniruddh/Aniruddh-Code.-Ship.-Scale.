@@ -18,7 +18,7 @@
       <li><a href="#">Stack</a></li>
       <li><a href="#">Projects</a></li>
       <li><a href="#experience-section">Experience</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#contact-section">Contact</a></li>
     </ul>
     <div class="nav-clock" id="clock"></div>
   </nav>
@@ -453,6 +453,146 @@
     </div>
   </section>
 
+  <!-- ── FAQ SECTION ── -->
+  <section id="faq-section">
+    <div class="faq-wrap">
+
+      <!-- LEFT -->
+      <div class="faq-left">
+        <div>
+          <span class="faq-tag">FAQ</span>
+          <h2 class="faq-heading">Everything<br>you need<br>to <em>know</em></h2>
+        </div>
+        <div>
+          <p class="faq-cta-label">Have a specific question?</p>
+          <a href="mailto:aniruddhrpanicker@gmail.com" class="faq-cta-link">Let's talk →</a>
+        </div>
+      </div>
+
+      <!-- RIGHT (accordion) -->
+      <div class="faq-right">
+
+        <div class="faq-item open">
+          <div class="faq-question">
+            <span class="faq-num">01.</span>
+            <span class="faq-q-text">What kind of backend work do you do?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            <p class="faq-answer-inner">I specialise in <strong>Java &amp; Spring Boot</strong> microservices — REST API design, event-driven architecture with Kafka, containerisation with Docker &amp; Kubernetes, and PostgreSQL/Redis data layers. I'm comfortable owning a service end-to-end, from schema design to CI/CD pipeline.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="faq-num">02.</span>
+            <span class="faq-q-text">What's your preferred tech stack?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            <p class="faq-answer-inner">Day-to-day: <strong>Java 17, Spring Boot 3, Hibernate, PostgreSQL, Redis, Kafka, Docker.</strong> For infra I reach for Kubernetes and AWS (EC2, RDS, S3). On the frontend I can pair with React when full-stack ownership is needed.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="faq-num">03.</span>
+            <span class="faq-q-text">Are you open to freelance or contract work?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            <p class="faq-answer-inner">Yes — I take on select freelance projects alongside my main role, particularly <strong>API design, performance optimisation, and system architecture consulting.</strong> Reach out with your scope and timeline and we'll see if it's a fit.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="faq-num">04.</span>
+            <span class="faq-q-text">How do you approach system design?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            <p class="faq-answer-inner">I start from <strong>requirements and failure modes</strong> first — what breaks, what scales, what can be async. I favour simple, well-bounded services over clever architectures. Documentation and observability (metrics, structured logs, tracing) are first-class concerns, not afterthoughts.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span class="faq-num">05.</span>
+            <span class="faq-q-text">What does your development process look like?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </div>
+          <div class="faq-answer">
+            <p class="faq-answer-inner">Iterative and test-driven. I prototype the data model and API contract first, write integration tests against a real DB, then layer in the business logic. Every service ships with a <strong>health endpoint, structured logging, and a Docker Compose</strong> for local dev from day one.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT SECTION ── -->
+  <section id="contact-section">
+    <div class="contact-wrap">
+
+      <!-- Floating icon -->
+      <div class="contact-icon-wrap">
+        <svg width="30" height="30" viewBox="0 0 40 40" fill="none">
+          <path d="M24 16c0 0-2-2-4-2s-4 2-4 2l-6 6c-1.1 1.1-1.1 2.9 0 4s2.9 1.1 4 0l1-1" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 24c0 0 2 2 4 2s4-2 4-2l6-6c1.1-1.1 1.1-2.9 0-4s-2.9-1.1-4 0l-1 1" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M14 26l-2 2" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M26 14l2-2" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <!-- Availability -->
+      <div class="contact-avail">
+        <span class="contact-avail-dot"></span>
+        Available for new opportunities
+      </div>
+
+      <!-- Heading -->
+      <h2 class="contact-heading">Tell me about your<br><em>next project</em></h2>
+      <p class="contact-sub">Backend engineering, system design, or just a good architecture conversation.</p>
+
+      <!-- Buttons -->
+      <div class="contact-btns">
+        <a href="mailto:aniruddhrpanicker@gmail.com" class="contact-btn contact-btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/>
+          </svg>
+          Email Me
+        </a>
+        <a href="https://linkedin.com/in/aniruddh-r-panicker" target="_blank" rel="noopener" class="contact-btn contact-btn-secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/>
+            <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/RPAniruddh" target="_blank" rel="noopener" class="contact-btn contact-btn-secondary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer id="site-footer">
+    <span class="footer-copy">© 2025 Aniruddh. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/aniruddh-r-panicker" target="_blank" rel="noopener">LinkedIn</a>
+      <span class="footer-sep">/</span>
+      <a href="https://github.com/RPAniruddh" target="_blank" rel="noopener">GitHub</a>
+      <span class="footer-sep">/</span>
+      <a href="mailto:aniruddhrpanicker@gmail.com">Email</a>
+    </div>
+  </footer>
+
   <div class="bubble-tooltip" id="tooltip"></div>
 
   <!-- GSAP -->
@@ -474,6 +614,8 @@
   <script src="src/scripts/components/animations.js"></script>
   <script src="src/scripts/components/experience.js"></script>
   <script src="src/scripts/components/certificates.js"></script>
+  <script src="src/scripts/components/faq.js"></script>
+  <script src="src/scripts/components/contact.js"></script>
   <script src="src/scripts/main.js"></script>
 
 </body>

@@ -51,6 +51,51 @@ nav {
 .nav-links a:hover { color: var(--text); }
 .nav-links a:hover, .nav-links a.active { color: var(--text); }
 
+/* ── FOOTER ── */
+#site-footer {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2.5rem;
+  height: 52px;
+  border-top: 1px solid var(--line);
+  background: var(--bg);
+}
+
+.footer-copy {
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.footer-links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.footer-links a {
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  transition: color 0.18s;
+}
+.footer-links a:hover { color: var(--text); }
+
+.footer-sep {
+  color: var(--line);
+  font-size: 0.65rem;
+  margin: 0 0.1rem;
+}
+
+@media (max-width: 600px) {
+  #site-footer { padding: 0 1.25rem; }
+}
+
 .nav-clock {
   flex: 1;
   text-align: right;

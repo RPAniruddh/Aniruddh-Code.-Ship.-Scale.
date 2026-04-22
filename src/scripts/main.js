@@ -28,6 +28,8 @@
   gsap.registerPlugin(ScrollTrigger);
   P.initExperience();
   P.initCertificates();
+  P.initFaq();
+  P.initContact();
 
   // ── Block reveal (slide up) for non-paragraph elements ──
   var blockSelectors = [
