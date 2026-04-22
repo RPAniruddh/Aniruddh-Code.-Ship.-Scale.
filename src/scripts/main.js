@@ -19,8 +19,9 @@
     bubbles.forEach(function (b) { b.style.opacity = fade; });
   }, { passive: true });
 
-  // ScrollTrigger text reveal for about section
+  // ScrollTrigger text reveal for about section + experience section
   gsap.registerPlugin(ScrollTrigger);
+  P.initExperience();
 
   // ── Block reveal (slide up) for non-paragraph elements ──
   var blockSelectors = [
