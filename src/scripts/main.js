@@ -22,6 +22,7 @@
   // ScrollTrigger text reveal for about section + experience section
   gsap.registerPlugin(ScrollTrigger);
   P.initExperience();
+  P.initCertificates();
 
   // ── Block reveal (slide up) for non-paragraph elements ──
   var blockSelectors = [
